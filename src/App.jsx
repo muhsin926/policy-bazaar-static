@@ -1,8 +1,5 @@
-import HealthInsurence from "./Pages/HealthInsurence"
+import HealthInsurence from "./Pages/HealthInsurence";
 
-const App = () => (
-  <HealthInsurence/>
-)
+const App = () => <HealthInsurence />;
 
-
-export default App
+export default App;
