@@ -3,6 +3,9 @@ import EditDetails from "../components/EditDetails/EditDetails";
 import Aside from "../components/Aside/Aside";
 import Plans from "../components/Plans/Plans";
 import Navbar from "../components/Navbar/Navbar";
+import Card from "../components/ValuesForMoney/Card";
+import BasicPlans from "../components/BasicPlans/BasicPlans";
+import QuicklyFind from "../components/QuicklyFind/QuicklyFind";
 
 const HealthInsurence = () => {
   return (
@@ -14,8 +17,11 @@ const HealthInsurence = () => {
         <section className="grid grid-cols-12">
           <article className="col-span-8">
             <Plans />
+            <Card/>
+            <BasicPlans/>
           </article>
-          <aside className="col-span-4 flex justify-end">
+          <aside className="col-span-4 flex flex-col items-end">
+            <QuicklyFind/>
             <Aside />
           </aside>
         </section>

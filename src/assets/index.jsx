@@ -18,6 +18,12 @@ import logoIcon from "./Logo/logo-icon.svg";
 import desktopIcon from "./Icons/icon-desktop-mobile.svg";
 import whatsapp from "./Icons/whatsapp.svg";
 import phone from "./Icons/phone.svg";
+import hand from "./Icons/icon-hand.svg";
+import heart from "./Icons/icon-heart.svg";
+import salama from "./Logo/salama-logo.png";
+import alsagr from "./Logo/alsagr.jpeg";
+import moneyPlan from "./Icons/money-plan.svg";
+import basicPlansVisa from "./Icons/basic-plans-Visa.svg";
 
 export {
   editIcon,
@@ -40,4 +46,10 @@ export {
   desktopIcon,
   whatsapp,
   phone,
+  hand,
+  heart,
+  salama,
+  alsagr,
+  moneyPlan,
+  basicPlansVisa,
 };
