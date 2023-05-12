@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 import Card from "../components/ValuesForMoney/Card";
 import BasicPlans from "../components/BasicPlans/BasicPlans";
 import QuicklyFind from "../components/QuicklyFind/QuicklyFind";
+import ShortlistedPlans from "../components/ShortlistedPlans/ShortlistedPlans";
 
 const HealthInsurence = () => {
   return (
@@ -22,6 +23,7 @@ const HealthInsurence = () => {
           </article>
           <aside className="col-span-4 flex flex-col items-end">
             <QuicklyFind/>
+            <ShortlistedPlans/>
             <Aside />
           </aside>
         </section>

@@ -32,10 +32,10 @@ const Plans = () => {
           </div>
           {salamaPlan ? (
             plan?.plans?.map((data, index) => (
-              <PlanCard key={index} plan={data} i={index} />
+              <PlanCard key={index} plan={data} i={index} company={plan.company} />
             ))
           ) : (
-            <PlanCard plan={plan?.plans[0]} i={i} />
+            <PlanCard plan={plan?.plans[0]} i={i} company={plan.company} />
           )}
         </div>
       ))}

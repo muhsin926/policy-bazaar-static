@@ -4,7 +4,7 @@ import PlanCard from '../Plans/PlanCard'
 
 const BasicPlans = () => {
   return (
-    <section className='bg-orange-100 rounded p-3 my-5'>
+    <section id='basicPlan' className='bg-orange-100 rounded p-3 my-5'>
         <div>
             <div className='flex gap-2 '>
                 <img src={basicPlansVisa} alt="" />

@@ -11,6 +11,8 @@ import {
   physician,
   physiotherapy,
 } from "../../assets";
+import { useContext } from "react";
+import { ShortlistedContext } from "../../context/ShortlistedContext";
 
 const info = [
   { icon: diagnosis, title: "Daignosis", mapKey: "diagnosis" },
@@ -23,12 +25,13 @@ const info = [
   { icon: physiotherapy, title: "Physiotherapy", mapKey: "physiotharapy" },
 ];
 
-const PlanCard = ({ plan, company }) => {
+const PlanCard = ({ plan, company, flag }) => {
+    const { shortlisted, setShortlisted } = useContext(ShortlistedContext)
   return (
     <div className={`col-span-10 border border-gray-200 rounded-md  w-full bg-white`}>
       <div className="flex justify-between px-5 pt-5">
         <div className="flex gap-2">
-          {company && (
+          {flag && (
             <div>
               <img className="w-20 border border-gray-200" src={company} alt="" />
             </div>
@@ -98,7 +101,7 @@ const PlanCard = ({ plan, company }) => {
         />
         <div className="border border-gray-300 rounded-full w-5 h-5 mx-2"></div>
         <Button style={"text-blue-700 mr-3 text-xs"} title={"Add to Campare"} />
-        <button className="text-blue-700 flex gap-1 text-xs items-center">
+        <button onClick={() => setShortlisted([...shortlisted, {plan,company}])} className="text-blue-700 flex gap-1 text-xs items-center">
           <img src={bookMark} alt="" />
           Shortlist
         </button>
