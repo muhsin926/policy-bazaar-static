@@ -7,9 +7,7 @@ import Navbar from "../components/Navbar/Navbar";
 const HealthInsurence = () => {
   return (
     <>
-      <head>
-        <Navbar />
-      </head>
+      <Navbar />
       <main className="mx-5">
         <QuickFilters />
         <EditDetails />

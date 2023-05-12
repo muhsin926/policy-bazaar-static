@@ -5,7 +5,6 @@ import {
   pharmacy,
   physician,
   physiotherapy,
-  watania_takaful,
 } from "../../assets";
 import { insurancePlans } from "../../constants";
 import { BsChevronDown, BsChevronRight } from "react-icons/bs";
@@ -31,7 +30,7 @@ const Plans = () => {
             <div className="border border-gray-200 rounded p-2 flex flex-col items-center">
               <img
                 className="w-20 border border-gray-200"
-                src={watania_takaful}
+                src={plan?.company}
                 alt="company logo"
               />
               <hr className="mt-2" />

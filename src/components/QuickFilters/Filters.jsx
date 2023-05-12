@@ -27,18 +27,25 @@ const Filters = () => {
         <AiOutlineLeftCircle />
       </button>
       <div
-        className=" px-2 w-[60rem] flex gap-3 overflow-x-auto scrollbar-hide"
+        className=" px-2 w-9/12 flex gap-3 overflow-x-auto scrollbar-hide"
         ref={containerRef}
       >
-        <div className="border border-gray-400  rounded-3xl p-3 pl-3 pr-48 flex gap-2 items-center">
+        <div className="border border-gray-400  rounded-3xl p-3 pl-3 pr-40 flex gap-2 items-center">
           <CiSearch /> <h4>Search </h4>
         </div>
         {filters.map((data, i) => (
           <div
             key={i}
-            className="border min-w-fit border-gray-400 rounded-3xl p-3 flex gap-2 items-center text-gray-700"
+            className={`${
+              i == 3 || i == 4
+                ? "border border-blue-600"
+                : "border border-gray-400"
+            } min-w-fit rounded-3xl p-3 flex gap-2 items-center text-gray-700`}
           >
-            <h4> {data} </h4>
+            <h4 className={`${i == 3 || i == 4 ? "text-blue-600" : null}`}>
+              {" "}
+              {data}{" "}
+            </h4>
             <BsChevronDown />
           </div>
         ))}
@@ -50,7 +57,7 @@ const Filters = () => {
         <AiOutlineRightCircle />
       </button>
       <button className="relative border border-gray-400 rounded-3xl p-3 px-5 flex gap-2 ml-4 justify-center items-center">
-        <FiFilter /> All filters
+        <FiFilter /> <h4 className="hidden xl:block">All filters</h4>
         <div className="absolute rounded-full w-5 text-sm -top-2 right-3 shadow-xl shadow-gray-500 bg-green-500 text-white ">
           2
         </div>
