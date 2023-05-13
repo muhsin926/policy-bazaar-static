@@ -36,7 +36,7 @@ p {
 
 h2 {
   font-weight: 500;
-  @apply font-normal md: font-medium
+  @apply font-normal md:font-medium
 }
 
 h1 {
