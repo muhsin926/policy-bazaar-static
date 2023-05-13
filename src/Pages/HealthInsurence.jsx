@@ -1,12 +1,12 @@
 import QuickFilters from "../components/QuickFilters/Filters";
 import EditDetails from "../components/EditDetails/EditDetails";
-import Aside from "../components/Aside/Aside";
+import Advantages from "../components/Aside/Advantages";
 import Plans from "../components/Plans/Plans";
 import Navbar from "../components/Navbar/Navbar";
 import Card from "../components/ValuesForMoney/Card";
 import BasicPlans from "../components/BasicPlans/BasicPlans";
-import QuicklyFind from "../components/QuicklyFind/QuicklyFind";
-import ShortlistedPlans from "../components/ShortlistedPlans/ShortlistedPlans";
+import QuicklyFind from "../components/Aside/QuicklyFind";
+import ShortlistedPlans from "../components/Aside/ShortlistedPlans";
 
 const HealthInsurence = () => {
   return (
@@ -16,15 +16,17 @@ const HealthInsurence = () => {
         <QuickFilters />
         <EditDetails />
         <section className="grid grid-cols-12">
-          <article className="col-span-8">
+          <article className="col-span-12 md:col-span-8">
             <Plans />
-            <Card/>
-            <BasicPlans/>
+            <Card />
+            <BasicPlans />
           </article>
-          <aside className="col-span-4 flex flex-col items-end">
-            <QuicklyFind/>
-            <ShortlistedPlans/>
-            <Aside />
+          <aside className="hidden md:block col-span-4 ">
+            <div className="flex flex-col items-end">
+              <QuicklyFind />
+              <ShortlistedPlans />
+              <Advantages />
+            </div>
           </aside>
         </section>
       </main>

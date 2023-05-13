@@ -2,7 +2,7 @@ import { basicPlansVisa, moneyPlan } from "../../assets";
 
 const QuicklyFind = () => {
   return (
-    <section className="rounded-lg shadow-lg border border-gray-200 w-96 h-fit mb-5 p-5">
+    <section className="rounded-lg shadow-lg border border-gray-200 w-5/6 h-fit mb-5 p-5">
       <h1 className="ml-1">Quickly Find</h1>
       <a href="#valueForMoney" className="cursor-pointer">
         <div className="flex gap-2 items-center my-3">

@@ -2,10 +2,10 @@ import { advantages } from "../../constants";
 import { logo } from "../../assets";
 import Button from "../Common/Button";
 
-const Aside = () => {
+const Advantages = () => {
   return (
     <>
-      <div className="rounded-lg shadow-lg border border-gray-200 w-96 h-fit  p-5">
+      <div className="rounded-lg shadow-lg border border-gray-200 w-5/6 h-fit  p-5">
         <div className="flex gap-3 items-center">
           <img className="w-8" src={logo} alt="logo" />
           <h2>Advantage</h2>
@@ -28,4 +28,4 @@ const Aside = () => {
   );
 };
 
-export default Aside;
+export default Advantages;

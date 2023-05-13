@@ -24,6 +24,7 @@ import salama from "./Logo/salama-logo.png";
 import alsagr from "./Logo/alsagr.jpeg";
 import moneyPlan from "./Icons/money-plan.svg";
 import basicPlansVisa from "./Icons/basic-plans-Visa.svg";
+import filterIcon from "./Icons/filter-sound.svg";
 
 export {
   editIcon,
@@ -52,4 +53,5 @@ export {
   alsagr,
   moneyPlan,
   basicPlansVisa,
+  filterIcon,
 };

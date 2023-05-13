@@ -55,8 +55,10 @@ const insurancePlans = [
         pharmacy: "30%",
         physiotharapy: "Nill",
         AED: "560",
-        shouldKnow: "In order to visit a specialist within your network you have to first consult a general..",
-        weLove: "Instant issuance and activation for members earning below AED 4,000."
+        shouldKnow:
+          "In order to visit a specialist within your network you have to first consult a general..",
+        weLove:
+          "Instant issuance and activation for members earning below AED 4,000.",
       },
       {
         plan: "Silk Road",
@@ -68,8 +70,10 @@ const insurancePlans = [
         pharmacy: "20%",
         physiotharapy: "20%",
         AED: "1,931",
-        shouldKnow: "Silk road is restricted to clinics for specialists and hospital access for emergencies only.",
-        weLove: "With easy claim service on Salama App, you can now submit your claim from the comfort of your home.. "
+        shouldKnow:
+          "Silk road is restricted to clinics for specialists and hospital access for emergencies only.",
+        weLove:
+          "With easy claim service on Salama App, you can now submit your claim from the comfort of your home.. ",
       },
       {
         plan: "Silk Road",
@@ -81,8 +85,10 @@ const insurancePlans = [
         pharmacy: "20%",
         physiotharapy: "20%",
         AED: "1,931",
-        shouldKnow: "Silk road is restricted to clinics for specialists and hospital access for emergencies only.",
-        weLove: "With easy claim service on Salama App, you can now submit your claim from the comfort of your home.. "
+        shouldKnow:
+          "Silk road is restricted to clinics for specialists and hospital access for emergencies only.",
+        weLove:
+          "With easy claim service on Salama App, you can now submit your claim from the comfort of your home.. ",
       },
     ],
   },
@@ -116,7 +122,8 @@ const insurancePlans = [
         physiotharapy: "10%",
         AED: "2,636",
         shouldKnow: " Annual medical is Aed 150,000",
-        weLove: "Direct access to hospitals for both inpatient & outpatient services"
+        weLove:
+          "Direct access to hospitals for both inpatient & outpatient services",
       },
     ],
   },
